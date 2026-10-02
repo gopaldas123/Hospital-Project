@@ -29,5 +29,4 @@ Technologies:
 Email: admin@lifecare.com
 Password: admin123
 
-## Important
-This is a frontend demonstration. For a real hospital application, connect the forms and admin dashboard to a secure backend such as Django + PostgreSQL. Never store real patient information or passwords in browser LocalStorage.
+
