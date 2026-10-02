@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | LifeCare</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 admin-sidebar p-0">
+                <div class="p-3 text-white">
+                    <h4>LifeCare</h4><small>Admin Panel</small>
+                </div>
+                <a href="admin.html">Dashboard</a><a href="#doctors">Doctor Management</a><a
+                    href="#departments">Department Management</a><a href="#appointments">Appointments</a><a
+                    href="#patients">Patients</a><a href="#enquiries">Enquiries</a><a href="index.html">View
+                    Website</a><a href="login.html">Logout</a>
+            </div>
+            <div class="col-md-9 col-lg-10 p-4">
+                <h2>Admin Dashboard</h2>
+                <p class="text-muted">Hospital management frontend demonstration</p>
+                <div class="row g-4 my-2">
+                    <div class="col-md-3">
+                        <div class="card dashboard-card p-3">
+                            <h3>25</h3>
+                            <p>Doctors</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card dashboard-card p-3">
+                            <h3>12</h3>
+                            <p>Departments</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card dashboard-card p-3">
+                            <h3>48</h3>
+                            <p>Appointments</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card dashboard-card p-3">
+                            <h3>126</h3>
+                            <p>Patients</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="doctors" class="mt-5">Doctor Management</h3><button class="btn btn-primary mb-3"
+                    onclick="alert('Add Doctor form can be connected to backend')">+ Add Doctor</button>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Department</th>
+                                <th>Experience</th>
+                                <th>Availability</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dr. Ananya Rao</td>
+                                <td>Cardiology</td>
+                                <td>12 years</td>
+                                <td>Available</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Rahul Sharma</td>
+                                <td>Neurology</td>
+                                <td>10 years</td>
+                                <td>Available</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Priya Reddy</td>
+                                <td>Pediatrics</td>
+                                <td>8 years</td>
+                                <td>Limited</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 id="departments" class="mt-5">Department Management</h3><button class="btn btn-primary mb-3"
+                    onclick="alert('Add Department form can be connected to backend')">+ Add Department</button>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Department</th>
+                                <th>Doctors</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cardiology</td>
+                                <td>4</td>
+                                <td>Active</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>Neurology</td>
+                                <td>3</td>
+                                <td>Active</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>Orthopedics</td>
+                                <td>3</td>
+                                <td>Active</td>
+                                <td><button class="btn btn-sm btn-outline-primary">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 id="appointments" class="mt-5">Appointment Management</h3>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Patient</th>
+                                <th>Doctor</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>APT1001</td>
+                                <td>Ravi Kumar</td>
+                                <td>Dr. Ananya Rao</td>
+                                <td>2026-10-02</td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                                <td><button class="btn btn-sm btn-success">Approve</button> <button
+                                        class="btn btn-sm btn-danger">Cancel</button></td>
+                            </tr>
+                            <tr>
+                                <td>APT1002</td>
+                                <td>Meena Devi</td>
+                                <td>Dr. Rahul Sharma</td>
+                                <td>2026-10-03</td>
+                                <td><span class="badge bg-success">Confirmed</span></td>
+                                <td><button class="btn btn-sm btn-primary">View</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 id="patients" class="mt-5">Patient Registration</h3><button class="btn btn-primary"
+                    onclick="alert('Patient registration management can be connected to Django backend')">Manage
+                    Patients</button>
+                <h3 id="enquiries" class="mt-5">Contact Enquiries</h3>
+                <div class="alert alert-info">No new enquiries in this demo dashboard.</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

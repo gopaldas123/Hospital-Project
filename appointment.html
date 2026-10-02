@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | LifeCare</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">LifeCare Hospital</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="departments.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link " href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link " href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link " href="facilities.html">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link " href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link " href="blog.html">Health Tips</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-header">
+        <div class="container text-center">
+            <h1>Book Appointment</h1>
+            <p>Schedule a consultation with our doctors.</p>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="form-card">
+                <form id="appointmentForm">
+                    <div class="row g-3">
+                        <div class="col-md-6"><label class="form-label">Patient Name</label><input id="patientName"
+                                class="form-control" required></div>
+                        <div class="col-md-6"><label class="form-label">Phone</label><input class="form-control"
+                                required></div>
+                        <div class="col-md-6"><label class="form-label">Department</label><select class="form-select">
+                                <option>Cardiology</option>
+                                <option>Neurology</option>
+                                <option>Orthopedics</option>
+                                <option>Pediatrics</option>
+                                <option>General Medicine</option>
+                            </select></div>
+                        <div class="col-md-6"><label class="form-label">Doctor</label><select id="doctor"
+                                class="form-select" required>
+                                <option value="">Select Doctor</option>
+                                <option>Dr. Ananya Rao</option>
+                                <option>Dr. Rahul Sharma</option>
+                                <option>Dr. Priya Reddy</option>
+                                <option>Dr. Arjun Kumar</option>
+                                <option>Dr. Sneha Patel</option>
+                            </select></div>
+                        <div class="col-md-6"><label class="form-label">Date</label><input id="date" type="date"
+                                class="form-control" required></div>
+                        <div class="col-md-6"><label class="form-label">Preferred Time</label><input id="time"
+                                type="time" class="form-control" required></div>
+                        <div class="col-12"><label class="form-label">Reason</label><textarea class="form-control"
+                                rows="3"></textarea></div>
+                        <div class="col-12"><button class="btn btn-primary btn-lg">Confirm Appointment</button></div>
+                    </div>
+                </form>
+                <div id="appointmentResult"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>LifeCare Hospital</h4>
+                    <p>Quality healthcare with compassion, technology and experienced professionals.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5><a href="about.html">About Us</a><br><a href="doctors.html">Doctors</a><br><a
+                        href="services.html">Services</a><br><a href="contact.html">Contact</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Emergency</h5>
+                    <p class="fs-4">108</p>
+                    <p>24/7 Emergency Services</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">© 2026 LifeCare Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
